@@ -1,0 +1,44 @@
+ /* To select a class, use a dot; to select an element, don't */
+.header {
+    padding: 10px;
+    text-align: center;
+    background: #d3d2f7;
+    color: #0b011f;
+    font-family: arial;
+    font-size: 20px;
+  }
+  .content {
+    text-align: justify;
+    margin: 0 auto;
+    font-family: arial;
+    width: 400px;
+  }
+ /* Jos haluaa tyylitellä pelkästään yhden id:n jutun niin CSS = #id{}
+ nämä kielinapit on sidottu sivun ylälaitaan (position: fixed) */
+#BtnLangEn{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+#unionjack{
+  height: 15px;
+  width: 25px;
+}
+
+#BtnLangFi{
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+#finnish{
+  height: 15px;
+  width: 25px;
+}
