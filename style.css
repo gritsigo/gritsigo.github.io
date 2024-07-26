@@ -13,9 +13,11 @@
     font-family: arial;
     width: 400px;
   }
- /* Jos haluaa tyylitellä pelkästään yhden id:n jutun niin CSS = #id{}
+ 
+  /* Jos haluaa tyylitellä pelkästään yhden id:n jutun niin CSS = #id{}
  nämä kielinapit on sidottu sivun ylälaitaan (position: fixed) */
-#BtnLangEn{
+
+ #BtnLangEn{
   position: fixed;
   top: 20px;
   right: 20px;
