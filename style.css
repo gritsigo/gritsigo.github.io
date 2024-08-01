@@ -5,6 +5,12 @@
     font-family: Arial, Helvetica, sans-serif;
     background: #290733;
   }
+
+  body {
+    padding: 20px;
+    background-color: #f3eaf6;
+  }
+
   .content {
     text-align: justify;
     margin: 0 auto;
@@ -12,6 +18,7 @@
     width: 400px;
   }
 
+  /*navigointi*/
   .button{
     background-color: #290733;
     border: 2px;
@@ -21,10 +28,7 @@
     text-align: center;
     display: inline-block;
     font-size: 20px;
-    text-decoration: none; /* poistaa alaviivan napin tekstistä */
-  }
-
-  .button {
+    text-decoration: none;
     transition-duration: 0.4s;
   }
 
@@ -33,14 +37,11 @@
     color: #290733;
   }
 
- 
-  /* Jos haluaa tyylitellä pelkästään yhden id:n jutun niin CSS = #id{}
- nämä kielinapit on sidottu sivun ylälaitaan (position: fixed) */
-
+/*kielinapit*/
  #BtnLangEn{
-  position: fixed;
-  top: 20px;
-  right: 20px;
+  position: absolute;
+  top: 30px;
+  right: 35px;
   padding: 0;
   background: none;
   border: none;
@@ -52,9 +53,9 @@
 }
 
 #BtnLangFi{
-  position: fixed;
-  top: 40px;
-  right: 20px;
+  position: absolute;
+  top: 50px;
+  right: 35px;
   padding: 0;
   background: none;
   border: none;
@@ -65,8 +66,9 @@
   width: 25px;
 }
 
+/*kakkageneraattori (do not judge!)*/
 #poopgen{
-  position: absolute;
+  position: fixed;
   bottom: 10px;
   right: 20px;
   background-color: #efcefa;
@@ -80,4 +82,33 @@
 #poopgen:hover {
   background-color: #9d5fb1;
   color: #efcefa;
+}
+
+/*blogiformaatti*/
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*miten tämän laatikon koko jäädytetään???*/
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  color: #290733;
+}
+
+/*mobiilioptimoija*/
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
