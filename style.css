@@ -1,38 +1,23 @@
  /* To select a class, use a dot; to select an element, don't */
-.header {
-    padding: 10px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #290733;
-  }
-
-  body {
-    padding: 20px;
-    background-color: #f3eaf6;
-  }
-
-  .content {
-    text-align: justify;
-    margin: 0 auto;
-    font-family: arial;
-    width: 400px;
-  }
-
   /*navigointi*/
-  .button{
-    background-color: #290733;
-    border: 2px;
-    border-color: white;
+ .topnav {
+    text-align: center;
+    background: #290733;
+    overflow: hidden;
+    padding: 15px;
+  }
+
+  .topnav a {
     color:white;
     padding: 15px 32px;
-    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     font-size: 20px;
     text-decoration: none;
     transition-duration: 0.4s;
   }
 
-  .button:hover {
+  .topnav a:hover {
     background-color: #efcefa;
     color: #290733;
   }
@@ -66,17 +51,27 @@
   width: 25px;
 }
 
+body {
+  padding: 20px;
+  background-color: #f3eaf6;
+}
+
+.content {
+  text-align: justify;
+  margin: 0 auto;
+  font-family: arial;
+  width: 400px;
+}
+
 /*kakkageneraattori (do not judge!)*/
 #poopgen{
   position: fixed;
   bottom: 10px;
   right: 20px;
   background-color: #efcefa;
-  font-size: 25px;
-}
-
-#poopgen {
+  font-size: 30px;
   transition-duration: 0.4s;
+  padding: 15px;
 }
 
 #poopgen:hover {
@@ -87,8 +82,8 @@
 /*blogiformaatti*/
 .column {
   float: left;
-  width: 33.33%;
-  padding: 10px;
+  width: 32%;
+  padding: 5px;
 }
 
 .row:after {
