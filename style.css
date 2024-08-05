@@ -1,16 +1,15 @@
- /* To select a class, use a dot; to select an element, don't */
-  /*navigointi*/
+/*navigointi*/
  .topnav {
     text-align: center;
     background: #290733;
-    overflow: hidden;
+    text-align: center;
     padding: 15px;
   }
 
   .topnav a {
     color:white;
     padding: 15px 32px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
     display: inline-block;
     font-size: 20px;
     text-decoration: none;
@@ -21,6 +20,35 @@
     background-color: #efcefa;
     color: #290733;
   }
+
+/*Dropdown menu*/
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    background-color: white;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #efcefa;
+  }
+
+.dropdown:hover .dropdown-content {
+  display: block;
+} 
 
 /*kielinapit*/
  #BtnLangEn{
@@ -50,7 +78,7 @@
   height: 15px;
   width: 25px;
 }
-
+/*Sisältö*/
 body {
   padding: 20px;
   background-color: #f3eaf6;
@@ -72,6 +100,7 @@ body {
   font-size: 30px;
   transition-duration: 0.4s;
   padding: 15px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 #poopgen:hover {
