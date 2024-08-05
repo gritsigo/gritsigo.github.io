@@ -50,10 +50,6 @@
   display: block;
 }
 
-.dropdown-backdrop {
-  z-index:0;
-}
-
 /*kielinapit*/
  #BtnLangEn{
   position: absolute;
