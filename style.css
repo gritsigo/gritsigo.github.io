@@ -48,7 +48,11 @@
 
 .dropdown:hover .dropdown-content {
   display: block;
-} 
+}
+
+.dropdown-backdrop {
+  z-index:0;
+}
 
 /*kielinapit*/
  #BtnLangEn{
