@@ -25,13 +25,18 @@
   .dropdown {
     position: relative;
     display: inline-block;
+    cursor: default;
+  }
+
+  .dropdown-menu {
+    cursor: default;
   }
 
   .dropdown-content {
     display: none;
     background-color: white;
     position: absolute;
-    min-width: 160px;
+    min-width: 220px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -46,66 +51,63 @@
     background-color: #efcefa;
   }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+  .dropdown:hover .dropdown-content {
+    display: block;
+    text-align: left;
+  }
 
-/*kielinapit*/
- #BtnLangEn{
-  position: absolute;
-  top: 30px;
-  right: 35px;
-  padding: 0;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-#unionjack{
-  height: 15px;
-  width: 25px;
-}
+  .dropdown-two-content-one {
+    display: none;
+    background-color: white;
+    position: absolute;
+    left: 220px;
+    top:0;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
 
-#BtnLangFi{
-  position: absolute;
-  top: 50px;
-  right: 35px;
-  padding: 0;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-#finnish{
-  height: 15px;
-  width: 25px;
-}
+  .dropdown-two-content-two {
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 53px;
+    left: 220px;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-two:hover .dropdown-two-content-one {
+    display: block;
+  }
+
+  .dropdown-two:hover .dropdown-two-content-two {
+    display: block;
+  }
+
 /*Sisältö*/
 body {
-  padding: 20px;
   background-color: #f3eaf6;
 }
 
 .content {
   text-align: justify;
-  margin: 0 auto;
+  margin: auto;
   font-family: arial;
   width: 400px;
 }
 
-/*kakkageneraattori (do not judge!)*/
-#poopgen{
-  position: fixed;
-  bottom: 10px;
-  right: 20px;
-  background-color: #efcefa;
-  font-size: 30px;
-  transition-duration: 0.4s;
-  padding: 15px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-#poopgen:hover {
-  background-color: #9d5fb1;
-  color: #efcefa;
+.blogpost {
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+  text-align: justify;
+  font-family: arial;
+  width: 500px;
 }
 
 /*blogiformaatti*/
@@ -131,8 +133,8 @@ body {
 }
 
 /*mobiilioptimoija*/
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .column {
     width: 100%;
   }
-}
+} */
