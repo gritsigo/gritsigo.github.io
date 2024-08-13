@@ -103,11 +103,38 @@ body {
   margin: auto;
   margin-top: 50px;
   border-radius: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
   color: black;
   background-color: white;
-  text-align: justify;
   font-family: arial;
   width: 500px;
+}
+
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  background-color: #290733;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/*Details*/
+details > summary {
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+details > p {
+  font-size: 12px;
 }
 
 /*blogiformaatti*/
@@ -123,13 +150,19 @@ body {
   clear: both;
 }
 
-/*miten tämän laatikon koko jäädytetään???*/
 .card {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
   border-radius: 8px;
   color: #290733;
+  height: 200px;
+  font-family: arial;
+  overflow: hidden;
+}
+
+.card > p {
+  font-size: 12px;
 }
 
 /*mobiilioptimoija*/
