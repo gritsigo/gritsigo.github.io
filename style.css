@@ -1,19 +1,21 @@
 /*navigointi*/
  .topnav {
     text-align: center;
-    background: #290733;
+    background: #1b0423;
     text-align: center;
-    padding: 15px;
+    padding: 5px;
   }
 
   .topnav a {
     color:white;
-    padding: 15px 32px;
+    padding: 25px 32px;
     font-family: Arial;
     display: inline-block;
-    font-size: 20px;
+    font-size: 27px;
     text-decoration: none;
     transition-duration: 0.4s;
+    width: 150px;
+    border-radius: 6px;
   }
 
   .topnav a:hover {
@@ -25,17 +27,13 @@
   .dropdown {
     position: relative;
     display: inline-block;
-    cursor: default;
-  }
-
-  .dropdown-menu {
-    cursor: default;
   }
 
   .dropdown-content {
     display: none;
     background-color: white;
     position: absolute;
+    border-radius: 4px;
     min-width: 220px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -45,10 +43,14 @@
     color: black;
     display: block;
     text-align: left;
+    border-radius: 4px;
+    width: 155px;
+    font-size: 22px;
   }
 
   .dropdown-content a:hover {
     background-color: #efcefa;
+    cursor: pointer;
   }
 
   .dropdown:hover .dropdown-content {
@@ -56,7 +58,7 @@
     text-align: left;
   }
 
-  .dropdown-two-content-one {
+/*  .dropdown-two-content-one {
     display: none;
     background-color: white;
     position: absolute;
@@ -84,9 +86,9 @@
 
   .dropdown-two:hover .dropdown-two-content-two {
     display: block;
-  }
+  } */
 
-/*Sisältö*/
+/*content*/
 body {
   background-color: #f3eaf6;
 }
@@ -95,7 +97,22 @@ body {
   text-align: justify;
   margin: auto;
   font-family: arial;
-  width: 400px;
+  width: 650px;
+  background-color: white;
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.pf-content {
+  text-align: center;
+  margin: auto;
+  font-family: arial;
+  width: 650px;
+  background-color: white;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
 }
 
 .blogpost {
@@ -108,7 +125,7 @@ body {
   color: black;
   background-color: white;
   font-family: arial;
-  width: 500px;
+  width: 650px;
 }
 
 #topBtn {
@@ -137,11 +154,58 @@ details > p {
   font-size: 12px;
 }
 
+.thedeets > details {
+  padding: 15px;
+  border: 1px solid white;
+  background-color: #f7ebfb;
+  border-radius: 3px;
+}
+
+.thedeets > details > summary {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.thedeets > details > p {
+  border-radius: 6px;
+}
+
+.thedeets > details > summary::after {
+  content: '';
+  width: 18px;
+  height: 14px;
+  background: url(images/arrow.svg);
+  background-size: cover;
+  margin-left: .75em;
+  transition: 0.2s;
+}
+
+details[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+.thedeets > details:hover {
+  background: #efcefa;
+  
+}
+
+.thedeets > details > p {
+  padding: 10px;
+  font-size: 15px;
+}
+
 /*blogiformaatti*/
 .column {
-  float: left;
-  width: 32%;
+  display:inline-block;
+  float:none;
+  width: 335px;
   padding: 5px;
+  margin: 3px;
+}
+
+body > .row {
+  text-align: center;
 }
 
 .row:after {
@@ -153,11 +217,13 @@ details > p {
 .card {
   background-color: white;
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 5px;
   border-radius: 8px;
   color: #290733;
   height: 200px;
+  width: 300px;
   font-family: arial;
+  text-align: left;
   overflow: hidden;
 }
 
