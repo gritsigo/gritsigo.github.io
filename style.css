@@ -1,7 +1,7 @@
 /*navigointi*/
  .topnav {
     text-align: center;
-    background: #1b0423;
+    background: #17031d;
     text-align: center;
     padding: 5px;
   }
@@ -19,8 +19,8 @@
   }
 
   .topnav a:hover {
-    background-color: #efcefa;
-    color: #290733;
+    background-color: #f5e0fc;
+    color: #000000;
   }
 
 /*Dropdown menu*/
@@ -49,7 +49,7 @@
   }
 
   .dropdown-content a:hover {
-    background-color: #efcefa;
+    background-color: #f5e0fc;
     cursor: pointer;
   }
 
@@ -230,9 +230,7 @@ details[open] > summary::after {
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: normal;
-  margin-left: 6%;
+  justify-content: center;
  }
  
  .row:after {
