@@ -97,7 +97,7 @@ body {
   text-align: justify;
   margin: auto;
   font-family: arial;
-  width: 650px;
+  width: 60%;
   background-color: white;
   padding: 30px;
   margin-top: 50px;
@@ -108,7 +108,7 @@ body {
   text-align: center;
   margin: auto;
   font-family: arial;
-  width: 650px;
+  width: 80%;
   background-color: white;
   padding: 20px;
   margin-top: 50px;
@@ -125,7 +125,25 @@ body {
   color: black;
   background-color: white;
   font-family: arial;
-  width: 650px;
+  width: 80%;
+  max-width: 650px;
+}
+
+.blog-header > h6 {
+  margin-top: 0;
+  float: right;
+}
+
+.blog-header > details {
+  margin-top: 15px;
+}
+
+.blog-content {
+  margin-top: 50px;
+}
+
+.blog-footer {
+  margin-top: 40px;
 }
 
 #topBtn {
@@ -150,11 +168,15 @@ details > summary {
   font-size: 12px;
 }
 
+details > summary:hover {
+  color: rgb(90, 90, 90);
+}
+
 details > p {
   font-size: 12px;
 }
 
-.thedeets > details {
+.thedeets > details > summary {
   padding: 15px;
   border: 1px solid white;
   background-color: #f7ebfb;
@@ -185,9 +207,9 @@ details[open] > summary::after {
   transform: rotate(180deg);
 }
 
-.thedeets > details:hover {
+.thedeets > details > summary:hover {
   background: #efcefa;
-  
+  color: black;
 }
 
 .thedeets > details > p {
@@ -195,23 +217,36 @@ details[open] > summary::after {
   font-size: 15px;
 }
 
+#returnlink {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 4px;
+}
+
 /*blogiformaatti*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: normal;
+  margin-left: 6%;
+ }
+ 
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
 .column {
   display:inline-block;
-  float:none;
+  float: none;
   width: 335px;
   padding: 5px;
   margin: 3px;
-}
-
-body > .row {
-  text-align: center;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .card {
