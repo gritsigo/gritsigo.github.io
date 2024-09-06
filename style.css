@@ -178,7 +178,7 @@ details > p {
 
 .thedeets > details > summary {
   padding: 15px;
-  border: 1px solid white;
+  border: 2px solid white;
   background-color: #f7ebfb;
   border-radius: 3px;
 }
@@ -189,15 +189,11 @@ details > p {
   font-size: 20px;
 }
 
-.thedeets > details > p {
-  border-radius: 6px;
-}
-
 .thedeets > details > summary::after {
   content: '';
   width: 18px;
   height: 14px;
-  background: url(images/arrow.svg);
+  background: url(./images/arrow.svg);
   background-size: cover;
   margin-left: .75em;
   transition: 0.2s;
@@ -215,6 +211,33 @@ details[open] > summary::after {
 .thedeets > details > p {
   padding: 10px;
   font-size: 15px;
+}
+
+.subdeets > h3 {
+  
+}
+
+.subdeets > details > summary {
+  padding: 10px;
+  border: 2px solid white;
+  background-color: #f7ebfb;
+  border-radius: 3px;
+}
+
+.subdeets > details > summary {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.subdeets > details > summary::after {
+  content: '';
+  width: 12px;
+  height: 10px;
+  background: url(./images/arrow.svg);
+  background-size: cover;
+  margin-left: .75em;
+  transition: 0.2s;
 }
 
 #returnlink {
