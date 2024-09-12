@@ -58,35 +58,6 @@
     text-align: left;
   }
 
-/*  .dropdown-two-content-one {
-    display: none;
-    background-color: white;
-    position: absolute;
-    left: 220px;
-    top:0;
-    min-width: 220px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-
-  .dropdown-two-content-two {
-    display: none;
-    background-color: white;
-    position: absolute;
-    top: 53px;
-    left: 220px;
-    min-width: 220px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-
-  .dropdown-two:hover .dropdown-two-content-one {
-    display: block;
-  }
-
-  .dropdown-two:hover .dropdown-two-content-two {
-    display: block;
-  } */
 
 /*content*/
 body {
@@ -162,6 +133,10 @@ body {
 }
 
 /*Details*/
+details {
+  font-family: Arial;
+}
+
 details > summary {
   border: none;
   cursor: pointer;
@@ -174,11 +149,14 @@ details > summary:hover {
 
 details > p {
   font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  margin: 0;
 }
 
 .thedeets > details > summary {
   padding: 15px;
-  border: 2px solid white;
+  margin: 1px;
   background-color: #f7ebfb;
   border-radius: 3px;
 }
@@ -199,6 +177,15 @@ details > p {
   transition: 0.2s;
 }
 
+.thedeets > details[open] > summary ~ *, .subdeets > details[open] > summary ~ * {
+  animation: sweep .5s;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-left: -1px}
+  100%  {opacity: 1; margin-left: 0px}
+}
+
 details[open] > summary::after {
   transform: rotate(180deg);
 }
@@ -208,26 +195,35 @@ details[open] > summary::after {
   color: black;
 }
 
-.thedeets > details > p {
-  padding: 10px;
-  font-size: 15px;
+.thedeets > details > p, .subdeets > details > p {
+  font-size: 14px;
+  line-height: 1.5;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: left;
+  padding: 7px;
 }
 
-.subdeets > h3 {
-  
+.thedeets > details > h3 {
+  padding-left: 10px;
+  font-weight: normal;
 }
 
 .subdeets > details > summary {
   padding: 10px;
-  border: 2px solid white;
+  margin: 1px;
   background-color: #f7ebfb;
   border-radius: 3px;
-}
-
-.subdeets > details > summary {
   display: flex;
   justify-content: space-between;
-  font-size: 13px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.thedeets > details > ul, .subdeets > details > ul {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
 }
 
 .subdeets > details > summary::after {
