@@ -84,6 +84,12 @@ margin-top: 15px;
 margin-top: 50px;
 }
 
+.introduction {
+  background-color: #f2e9fe;
+  padding: 10px;
+  border-radius: 4px;
+}
+
 .blog-footer {
 margin-top: 40px;
 }
@@ -101,6 +107,13 @@ color: white;
 cursor: pointer;
 padding: 10px;
 border-radius: 4px;
+}
+
+.centerimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
 }
 
 /*Details*/
@@ -161,20 +174,31 @@ background-color: rgb(242, 239, 253);
 color: black;
 }
 
-.thedeets > details > p, .subdeets > details > p {
-font-size: 14px;
+.thedeets > details > p {
+font-size: 16px;
 line-height: 1.5;
 padding-left: 15px;
 padding-right: 15px;
 text-align: left;
 padding: 7px;
-margin-left: 20px;
+
 margin-right: 20px;
 }
 
+.subdeets > details > p {
+  font-size: 14px;
+  line-height: 1.5;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: left;
+  padding: 7px;
+  margin-left: 20px;
+  margin-right: 20px;
+  }
+
 .thedeets > details > h3 {
 font-weight: normal;
-margin-left: 20px;
+margin-left: 10px;
 margin-right: 20px;
 }
 
@@ -196,6 +220,31 @@ font-size: 14px;
 line-height: 1.5;
 margin: 0;
 margin-left: 25px;
+}
+
+.editing-summary{
+  background-color: #f2e9fe;
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.editing-summary > p {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.summarylist {
+  font-size: 16px;
+  margin: 0;
+  margin-left: 15px;
+  padding-bottom: 15px;
+}
+
+.summarylist > li {
+  margin-top: 1em;
 }
 
 .subdeets > details > summary::after {

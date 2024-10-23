@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="English">
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <title>Techscribe Sonja</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="../images/favicon.png"
+    />
+  </head>
+
+  <div class="topnav">
+    <a href="../index.html">About me</a>
+    <a href="../portfolio.html">Portfolio</a>
+    <!--<a href="../blog.html">Blog</a> -->
+  </div>
+
+  <body>
+    <button onclick="topFunction()" id="topBtn">Back to top</button>
+    <div class="blogpost">
+      <div class="blog-header">
+        <h6>Post published: 23/10/2024<br/>Content written: 10/2024</h6>
+        <a href="../portfolio.html" id="returnlink">&lt; Back to Portfolio</a>
+      </div>
+      <div class="blog-content">
+        <h1 style="text-align:center; line-height: 35px;">The process of simplifying (technical) text</h1><h3 style="text-align: center; line-height: 22px;">Or: prose is the only genre where the reader is allowed to encounter walls of text</h3>
+      </div>
+      <div class="introduction">
+        <h3 style="text-align: center;">Background</h3>
+        <p>This description of the simplification process of technical texts is based on a process description I created during my first documentation internship. The purpose of this description is to provide a step-by-step structure for the process of simplifying text. Simplification improves the usability of technical texts and should therefore be considered when designing and editing documentation.</p>
+        <p>Although I primarily discuss the simplification of technical texts, you can use the steps presented here as a reference for editing and improving the readability of different (non-fiction) content.</p>
+        <p>The theoretical background for this process description is based on</p>
+          <ul>
+            <li>the dimensions of usability as regards textual systems (<a href="https://urn.fi/URN:ISBN:978-951-44-8839-9">Suojanen, Koskinen, Tuominen 2012</a>)</li>
+            <li>the basics of effective information seeking (<a href="https://www.researchgate.net/publication/249364883_On_User_Studies_and_Information_Needs">Wilson 2006</a>)</li>
+            <li>the ASD Simplified Technical English specification (ASD-STE 2017)</li>
+          </ul>
+        <p>Please note that this process description is based on my personal experiences working with technical documentation. Thus, it is far from conclusive and may contradict your own working methods or preferences as regards editing text. Always consult the style guide assigned to you.</p>
+      </div>
+      <div class="blog-content">
+        <h3 style="text-align: center;">The top-to-bottom approach to simplification</h3>
+        <p>The purpose of the simplification process if to improve the usability of text by making it more readable and comprehensible. To produce text that is easy, quick, and pleasant to read as well as easy to understand, I prefer to divide the editing process into distinct steps. I call this step-by-step division the top-to-bottom method, which is depicted in the figure below.</p>
+        <img src="../images/flowchart.png"
+          class="centerimage"
+          alt="An image depicting the steps in the simplification process"
+          title="Simplification of documents © Sonja Tastula 2024"
+          style="width: 275px;">
+        <p>The top-to-bottom method means that when I edit a document, I progress step-by-step from a higher level of text to a lower one. The levels of text in this model are chapter, paragraph, sentence, clause, and word. I discuss each step separately in the sections below. At the end of each section, there is a list that summarises the key points of the step.</p>
+      </div>
+      <div class="thedeets">
+        <details>
+          <summary style="padding: 10px;">Chapter</summary>
+            <p style="margin-top: 15px; margin-bottom: 20px;">The starting level within a document is the chapter. In structured technical documentation, a chapter is typically a single DITA module: an individual unit that has a title and (textual) content.</p>
+              <img src="../images/topic_example.JPG"
+              class="centerimage"
+              alt="An image of a DITA concept topic"
+              title="An example of a DITA topic"
+              style="width: 450px; border: 1px solid black;">
+              <figcaption style="font-style: italic; font-size: 12px; text-align: center;">A simple DITA concept module.</figcaption>
+            <p style="margin-top: 20px;">The purpose of a chapter is to provide a block of information on a certain topic. Thus, you should make sure that one chapter only deals with one topic and has a logical flow of information. When information is presented in a coherent manner, the reader can proceed through the text smoothly.</p>
+            <p style="margin-bottom: 15px;">Chapters are always headed by titles. In documents, titles typically comprise the table of contents or the bookmarks panel of a PDF document. When users seek information, the titles of chapters are likely the first things they encounter and pay attention to because titles anticipate the content in a section. Therefore, it is important to make sure the title of the chapter matches that of its contents.</p>
+            <div class="editing-summary">
+              <p>To make sure your chapter is readable and provides information efficiently:</p>
+              <ul class="summarylist">
+                <li>Read through the chapter to get an adequate understanding of its contents.</li>
+                <li>Make sure the title of the chapter is transparent and matches the content.</li>
+                <li>Separate any elements or sections which do not pertain to the current chapter’s topic. You can either create a new chapter about them or move them to a suitable, existing chapter.</li>
+                <li>Make sure the chapter has a logical structure. Don’t hesitate to move elements around to create a more coherent flow of information.</li>
+                <li>Place any illustrations, graphs, or other elements that present or quantify data as close as possible to the section in the text where they are discussed.</li>
+              </ul>
+            </div>
+        </details>
+        <details>
+          <summary style="padding: 10px;">Paragraph</summary>
+            <p style="margin-top: 15px;">In technical documentation, a paragraph can be as short as one clause or consist of several sentences. However, prose is the <b>only</b> genre where the reader is allowed to encounter <i>walls of text</i></p>
+            <p>Walls of text are long sections of text with no paragraph breaks. They are exhausting to read, and the mere sight of them can deter readers and discourage engaging with the content. A good rule of thumb is that if you, the writer, don’t want to read a paragraph due to its length, nor will your readers.</p>
+            <p>The simplest method to deconstruct a wall of text is by adding paragraph breaks. Chopping up massive chunks of text makes the document more approachable as it facilitates skimming.</p>
+            <p>Whereas simply adding some paragraph breaks may enhance readability, it’s even better to consider alternative means of presentation. This means that whenever you can, you should present content either as a list or table. Lists and tables further increase the approachability and readability of documentation as they are</p>
+            <ul style="font-size: 16px; margin-bottom: 15px;">
+              <li>easy to spot</li>
+              <li>easy to skim</li>
+              <li>quick to read.</li>
+            </ul>
+            <img src="../images/paragraph_example.JPG"
+            class="centerimage"
+            alt="An image of a text paragraph"
+            title="A text paragraph where a list of items is in bullet point format"
+            style="width: 550px; border: 1px solid black;">
+            <figcaption style="font-style: italic; font-size: 12px; text-align: center;">A text paragraph where a list of items is in bullet point format.</figcaption>
+            <p  style="margin-bottom: 15px; margin-top: 15px;">Another concern as regards paragraphs is the relevance of their contents. One paragraph should only discuss one specific issue or one aspect of a specific issue. Additionally, you should remove any repetitive or irrelevant sentences from the text altogether.</p>
+            <div class="editing-summary">
+              <p>To achieve optimal paragraph structure:</p>
+              <ul class="summarylist">
+                <li>Make sure each chapter only addresses one issue. Separate chapters that contain information on more than one aspect.</li>
+                <li>Avoid repetition by omitting or merging sentences that have identical or similar content.</li>
+                <li>If the chapter contains any long stretches of text, add paragraph breaks to suitable places. Tie the separated paragraphs together with transitional words or phrases or with moderate repetition of information.</li>
+                <li>Whenever you can, present information in lists or tables instead of paragraphs.</li>
+              </ul>
+            </div>
+        </details>
+        <details>
+          <summary style="padding: 10px;">Sentence</summary>
+            <p style="margin-top: 15px; margin-bottom: 15px;">Similarly to paragraphs, sentences should not be overly long. If a sentence is very long, the reader will have forgotten where it began once they reach the end. As a result, the reader has to read the sentence several times, which reduces the efficiency of the text.</p>
+            <img src="../images/sentence_example.JPG"
+            class="centerimage"
+            alt="An image of a sentence"
+            title="An example of an English sentence"
+            style="width: 550px; border: 1px solid black;">
+            <figcaption style="font-style: italic; font-size: 12px; text-align: center;">A 14-word sentencce comprising two clauses.</figcaption>
+            <p style="margin-top: 15px;">The STE recommends that sentences in English technical documentation be no longer than 25 words. Whereas the act of counting the words in a sentence can occasionally be helpful, it is better to focus on the content and message of the sentence. If you can’t shorten a sentence without it losing its meaning, just leave it! An occasional 30-word sentence is not detrimental to the text as long as they don’t become the norm.</p>
+            <p>In order to shorten long sentences, you can</p>
+            <ul style="font-size: 16px; margin-bottom: 15px;">
+              <li>format any lists of items in a paragraph into bullet point lists (like I'm doing here)</li>
+              <li>separate the clauses that make up the sentences and join them together with transitional words or repetition</li>
+              <li>rephrase long expressions into shorter ones.</li>
+            </ul>
+            <p style="margin-bottom: 15px;">Another way to make sentences more readable is to focus on the order in which information is presented. New information is typically placed towards the end of a sentence. This way, the reader can continue to build up on the things she already knows.</p>
+            <div class="editing-summary">
+              <p>To formulate comprehensible sentences, complete the steps that follow:</p>
+              <ul class="summarylist">
+                <li>Use the present tense.</li>
+                <li>Cut overly long sentences into several smaller clauses or sentences. Tie these together with transitional words or phrases.</li>
+                <li>If the sentence contains a list of items, present them as a list.</li>
+                <li>Rephrase long expressions if you can do that without changing the meaning.</li>
+                <li>Make sure that new information is presented at the end of a sentence.</li>
+              </ul>
+            </div>
+        </details>
+        <details>
+          <summary style="padding: 10px;">Clause</summary>
+            <p style="margin-top: 15px;">The editing of clauses shares some similarities with the editing of sentences, such as placing new information at the end of a clause. I wouldn’t say you should complete these two phases separately, but for clarity, I discuss them separately here.</p>
+            <p>In my view, the editing of clauses focuses primarily on their syntactic properties, such as</p>
+            <ul style="font-size: 16px; margin-bottom: 15px;">
+              <li>the qualities of the noun phrases</li>
+              <li>the use of the active voice</li>
+              <li>word order</li>
+              <li>subject-verb agreement.</li>
+            </ul>
+            <p>As regards noun phrases (NPs), the property to focus on is their length. According to the STE, NPs should not be longer than three words; the longer the NP in a clause is, the more difficult the clause is to understand. Try to omit any unnecessary modifiers or rephrase the clause so that you don’t have to use a long NP.</p>
+            <p>Another syntactic aspect which improves readability is the use of the active voice. The active voice is preferable to the passive voice because the subject constituent of the clause (the agent) is transparent. Thus, there is no question of who or what the subject is, which reduces overall ambiguity. The reader doesn’t have to guess who does what, which is a particularly relevant quality in an operative text.</p>
+            <p>Additionally, clauses should have the typical English word order of subject-verb-object (SVO), which is often achieved by using the active voice. Using the proper word order helps produce clauses that are understandable, meaningful, and grammatically correct.</p>
+            <p style="margin-bottom: 15px;">Finally, you should make sure that in each clause, the subject constituent agrees grammatically with the predicate verb. In simple terms, this means that if the subject is in plural form, the verb is also in plural form. Especially in the case of very long NPs, the proper form of the verb may be difficult to determine – another aspect positively affected by opting for short subject NPs!</p>
+            <div class="editing-summary">
+              <p>To make your clauses more readable:</p>
+              <ul class="summarylist">
+                <li>Whenever possible, use the active voice.</li>
+                <li>Use short noun phrases. If you have to use a long NP, try to place it in uninterrupted form at the end of the clause. Do not favour this over the use of the active voice, however.</li>
+                <li>Make sure the clauses have the word order of subject-verb-object. You can often achieve this simply by using the active voice.</li>
+                <li>In each clause, make sure the subject agrees in number with the predicate verb.</li>
+              </ul>
+            </div>
+        </details>
+        <details>
+          <summary style="padding: 10px;">Word</summary>
+            <p style="margin-top: 15px; margin-bottom: 15px;">The final level of text in the top-to-bottom approach is the word. As regards word choices, you should refer to an appropriate style guide, be it the STE specification or a company-specific style guide. The style guide in use in your company is the best tool for ensuring that you use appropriate language.</p>
+            <img src="../images/badwords_example.JPG"
+            class="centerimage"
+            alt="An image of a clause exemplifying the use of ambiguous words"
+            title="An example of the use of ambiguous words"
+            style="width: 550px; border: 1px solid black;">
+            <figcaption style="font-style: italic; font-size: 12px; text-align: center;">A poorly formatted clause with three overly vague expressions underlined.</figcaption>
+            <p style="margin-top: 15px;">Some general pointers for word choices include using</p>
+            <ul style="font-size: 16px; margin-bottom: 15px;">
+              <li>words and expressions that are common and familiar</li>
+              <li>words that are least ambiguous in the given context</li>
+              <li>verbs instead of nominalised forms.</li>
+            </ul>
+            <p>Firstly, one should use words that are common and therefore more likely familiar to the reader. This can mean favouring Germanic-based words instead of Latin or French-based ones. The former are often shorter and more to the point whereas the latter are longer and therefore more complex-looking.</p>
+            <p>For the sake of clarity, it is also important to avoid unnecessary jargon. User documentation is typically not intended for subject matter experts to use. Instead, the user group may include people who are completely unfamiliar with the field’s specialised language. Users do not want or need to spend time making sense of content that they can’t understand. It is the writer’s responsibility to take the potential readers into account and produce language that is appropriate for their level of expertise.</p>
+            <p>Sometimes, however, it may be difficult to distinguish jargon from terms that are common, field-specific yet complex-looking. In such cases, it can be useful to ask for advice from a colleague or an SME. Sometimes a simple Google query can reveal whether the word is commonly used when discussing the subject matter in question. You should, however, first and foremost try to determine whether the term is comprehensible to the readers.</p>
+            <p>Additionally, the words and terms in documentation should be ones that have the least ambiguity in the surrounding context. Because the primary function of operative texts is to instruct readers to do something, the words should be as clear and transparent as possible.</p>
+            <p style="margin-bottom: 15px;">The final point is to use verbs instead of nominalisations. Nominalisations are nouns created from adjectives or verbs, such as <i>to nominalise</i> → <i>nominalisation</i> or <i>to operate</i> → <i>operating</i>. Avoiding nominalisations is not always easy or even possible, but a useful guideline is to replace them with verbs whenever possible.</p>
+            <div class="editing-summary">
+              <p>To ensure you make optimal word choices:</p>
+              <ul class="summarylist">
+                <li>If you are unsure of whether a word is acceptable to use, consult the designated style guide.</li>
+                <li>Replace complex or difficult words with clearer, more familiar synonyms.</li>
+                <li>Do not use jargon! Always select the most understandable alternative instead of the one that sounds the coolest.</li>
+                <li>Select the word which allows for the least ambiguity in the given context.</li>
+                <li>Whenever possible, use verbs instead of nominalisations.</li>
+              </ul>
+            </div>
+        </details>
+      </div>
+        <div class="blog-footer">
+        <a href="../portfolio.html" id="returnlink">&lt; Back to Portfolio</a>
+      </div>
+    </div>
+    <script src="../scripts.js"></script>
+  </body>
+
+</html>
